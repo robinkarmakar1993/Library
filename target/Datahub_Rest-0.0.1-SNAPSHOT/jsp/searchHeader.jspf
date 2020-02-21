@@ -1,0 +1,30 @@
+<%@ taglib prefix="form" 
+         uri="http://www.springframework.org/tags/form" %>
+
+<!-- TODO: Complete form tag to include form taglib, and set the command name properly -->
+<form:form modelAttribute='search'>
+
+  <table width='500'>
+  <tbody>
+    <tr>
+     <td align='right' width='514'><b><font size='+10'>Welcome to DataHub's operational Interface.</font></b></td>
+    </tr>
+    <tr>
+      <td align='right' valign='top' width='514'><b><font size='+1'><i><font color='#0000cc'>Log In</font></i></font></b></td>
+    </tr>
+    <tr>
+      <tr align='right' valign='bottom' width='200'><font color='#0000cc'><b>Username: </b></font>
+     
+	  <form:input size='20' path='Username'/><br/>
+	  
+	  <tr align='right' valign='bottom' width='200'><font color='#0000cc'><b>Password: </b></font>
+     
+	  <form:input size='20' path='Password'/><br/>
+	  
+      <input type='submit' name='Submit' value='Search'/></td>
+    </tr>
+  </tbody>
+  </table>
+  
+<!-- TODO: Complete form tag to include form taglib -->   
+</form:form>
