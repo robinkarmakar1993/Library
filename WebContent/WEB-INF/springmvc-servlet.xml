@@ -9,9 +9,9 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
 
    <!-- TODO - add in component scanning starting at package com.javatunes.web -->
-	<context:component-scan base-package="com.datahub.controller.copy"/>
+	<context:component-scan base-package="com.library.controller.copy"/>
 	<!-- TODO - add in component scanning starting at package com.javatunes.web -->
-	<context:component-scan base-package="com.datahub.utils"/>
+	<context:component-scan base-package="com.library.utils"/>
 	
 	<!-- mvc:annotation-driven initializes a number of capabilities to support Spring MVC -->
 	<mvc:annotation-driven/>
