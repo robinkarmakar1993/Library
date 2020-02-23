@@ -1,14 +1,14 @@
-package com.datahub.persistence;
+package com.library.persistence;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.datahub.utils.MQItem;
-import com.datahub.utils.MTItem;
-import com.datahub.utils.Members;
-import com.datahub.utils.MessageItem;
+import com.library.utils.MQItem;
+import com.library.utils.MTItem;
+import com.library.utils.Members;
+import com.library.utils.MessageItem;
 
 @Component
 public class DAOService {

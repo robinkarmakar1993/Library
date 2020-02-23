@@ -1,4 +1,4 @@
-package com.datahub.controller.copy;
+package com.library.controller;
 
 import java.util.List;
 
@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.datahub.persistence.DAOService;
-import com.datahub.utils.MQItem;
-import com.datahub.utils.MessageItem;
+import com.library.persistence.DAOService;
+import com.library.utils.MQItem;
+import com.library.utils.MessageItem;
 
 @Controller
 @RequestMapping("/MessageQueue")

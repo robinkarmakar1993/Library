@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>DataHub Operational UI</title>
+<title>Libary Home Page</title>
 </head>
 <body>
-		<h1>DataHub Operational UI Login Page</h1>
+		<h1>Library Login Page</h1>
 		<form action="verify.jsp" method="get">
 			Enter UserName: <input type="text" name="uname"/>
 			<br/>Enter Password : <input type="password" name = "pass"/>

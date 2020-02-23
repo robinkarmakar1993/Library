@@ -1,4 +1,4 @@
-package com.datahub.persistence;
+package com.library.persistence;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,8 +15,8 @@ import org.springframework.jdbc.core.RowMapper;
 
 import org.springframework.stereotype.Component;
 
-import com.datahub.utils.MQItem;
-import com.datahub.utils.MessageItem;
+import com.library.utils.MQItem;
+import com.library.utils.MessageItem;
 
 @Component
 public class MessagesDAO {

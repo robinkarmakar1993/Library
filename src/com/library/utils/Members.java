@@ -7,7 +7,7 @@
  * Copyright 2006-7 LearningPatterns Inc.
  */
 
-package com.datahub.utils;
+package com.library.utils;
 
 public class Members
 {

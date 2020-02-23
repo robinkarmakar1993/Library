@@ -8,9 +8,7 @@
  */
 
 
-package com.datahub.utils;
-
-import com.datahub.utils.MQItem;
+package com.library.persistence;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -26,6 +24,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
 
+import com.library.utils.MQItem;
+
 
 
 /**
@@ -40,7 +40,7 @@ public class MessageQueueDAO  {
 	   private JdbcTemplate jdbcTemplate;
 	   
 	   public MQItem getMQbyidmapper(long id){
-		   String sql = "SELECT * FROM MessageQueue where QueueId = ? and pass = ?";
+		   String sql = "SELECT * FROM MessageQueue where QueueId = ?";
 		   return jdbcTemplate.queryForObject(sql,new Object[] {id}, new MessageQueueMapper());
 		   
 	   }

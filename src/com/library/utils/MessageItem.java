@@ -1,4 +1,4 @@
-package com.datahub.utils;
+package com.library.utils;
 
 public class MessageItem
 {

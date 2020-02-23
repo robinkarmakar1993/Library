@@ -7,7 +7,7 @@
  * Copyright 2006-12 LearningPatterns Inc.
  */
  
-package com.datahub.utils;
+package com.library.utils;
 
 import java.util.Collection;
 
