@@ -7,10 +7,10 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 
   <bean id ="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-  	<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
-  	<property name="url" value="jdbc:mysql://localhost:3306/test3;"/>
+  	<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+  	<property name="url" value="jdbc:mysql://localhost:3306"/>
   	<property name="username" value="root" />
-  	<property name="password" value="youknow"/>
+  	<property name="password" value="root"/>
   </bean>
   
  <context:component-scan base-package="com.library.persistence"/>
