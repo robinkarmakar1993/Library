@@ -9,6 +9,7 @@ import com.library.utils.MQItem;
 import com.library.utils.MTItem;
 import com.library.utils.Members;
 import com.library.utils.MessageItem;
+import com.library.utils.Test;
 
 @Component
 public class DAOService {
@@ -48,7 +49,7 @@ public class DAOService {
 		return mtrace.getmtbymapper(id);
 	}
 
-	public Members getMembersidmapper(String un, String password){
+	public Test getMembersidmapper(String un, String password){
 		return mem.getMembersidmapper(un, password);
 	}
 	

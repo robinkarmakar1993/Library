@@ -28,6 +28,7 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
 
 import com.library.utils.Members;
+import com.library.utils.Test;
 
 
 
@@ -42,9 +43,9 @@ public class MembersDAO  {
 	   private DataSource dataSource;
 	   private JdbcTemplate jdbcTemplate;
 	   
-	   public Members getMembersidmapper(String uname, String password){
-		   String sql = "SELECT * FROM members where uname = ? and pass = ?";
-		   return jdbcTemplate.queryForObject(sql,new Object[] {uname, password}, new MemberMapper());
+	   public Test getMembersidmapper(String uname, String password){
+		   String sql = "SELECT * FROM sys.Test";
+		   return jdbcTemplate.queryForObject(sql, new MemberMapper());
 		   
 	   }
 
@@ -96,18 +97,13 @@ public class MembersDAO  {
 			this.jdbcTemplate = jdbcTemplate;
 		}
 		
-		private static final class MemberMapper implements RowMapper<Members>{
+		private static final class MemberMapper implements RowMapper<Test>{
 			
 			@Override
-			public Members mapRow(ResultSet resultSet, int rowNum) throws SQLException {
-				Members m = new Members();
-				m.setId(resultSet.getLong("id"));
-				m.setFirstName(resultSet.getString("first_name"));
-				m.setLastName(resultSet.getString("last_name"));
-				m.setEmail(resultSet.getString("email"));
-				m.setUname(resultSet.getString("uname"));
-				m.setPassword(resultSet.getString("pass"));
-				m.setRegdate(resultSet.getString("regdate"));
+			public Test mapRow(ResultSet resultSet, int rowNum) throws SQLException {
+				Test m = new Test();
+				m.setId(resultSet.getInt("Test"));
+				
 		
 				return m;
 
