@@ -16,7 +16,7 @@ import com.library.utils.MessageItem;
 import com.library.utils.Search;
 
 @Controller
-@RequestMapping("/search")
+@RequestMapping("/search.do")
 public class CopyOfMQController {
 
 	@Autowired
